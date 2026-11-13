@@ -1,3 +1,9 @@
+This is a maintained fork of the extension, basically making it work on my Debian testing machine (i.e. working on the GNOME version it has).
+
+Maybe I'll remove cruft or add features. If I add, I'll mention it here.
+
+---
+
 # Pop Shell
 
 Pop Shell is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows. The core feature of Pop Shell is the addition of advanced tiling window management — a feature that has been highly sought within our community. For many — ourselves included — i3wm has become the leading competitor to the GNOME desktop.
@@ -12,7 +18,6 @@ Therefore, we see an opportunity here to advance the usability of the GNOME desk
 
 ## Table of Contents
 
-- [The Proposal](#the-proposal): Possible upstreaming into GNOME
 - [The Problem](#the-problem): Why we need this in GNOME
 - [Installation](#installation): For those wanting to install this on their distribution
 - The Solution:
@@ -20,13 +25,6 @@ Therefore, we see an opportunity here to advance the usability of the GNOME desk
   - [Floating Mode](#floating-mode): Behaviors specific to the floating mode
   - [Tiling Mode](#tiling-mode): Behaviors specific to the auto-tiling mode
 - [Developers](#developers): Guide for getting started with development
----
-
-## The Proposal
-
-A proposal for integration of the tiling window management features from Pop Shell into GNOME is currently under development. It will be created as a GitLab issue on GNOME Shell for future discussion, once we have invested our time into producing a functioning prototype, and learned what does and does not work in practice.
-
-Ideally, the features explored in Pop Shell will be available for any environment using Mutter — far extending the half-monitor tiling capability currently present. By starting out as a shell extension, anyone using GNOME Shell can install this onto their system, without having to install a Pop-specific fork of GNOME on their system.
 
 ---
 
@@ -77,16 +75,6 @@ Proper functionality of the shell requires modifying GNOME's default keyboard sh
 If you want to uninstall the extension, you may invoke `make uninstall`, and then open the "Keyboard Shortcuts" panel in GNOME Settings to select the "Reset All.." button in the header bar.
 
 > Note that if you are packaging for your Linux distribution, many features in Pop Shell will not work out of the box because they require changes to GNOME's default keyboard shortcuts. A local install is necessary if you aren't packaging your GNOME session with these default keyboard shortcuts unset or changed.
-
-### Packaging status
-
-- [Fedora](https://src.fedoraproject.org/rpms/gnome-shell-extension-pop-shell/): `sudo dnf install gnome-shell-extension-pop-shell xprop`
-- [Gentoo](https://packages.gentoo.org/packages/gnome-extra/gnome-shell-extension-pop-shell): `emerge gnome-shell-extension-pop-shell`
-- [openSUSE Tumbleweed](https://build.opensuse.org/package/show/openSUSE:Factory/gnome-shell-extension-pop-shell): `sudo zypper install gnome-shell-extension-pop-shell`
-- [Arch Linux](https://aur.archlinux.org/packages/?O=0&K=gnome-shell-extension-pop-shell) (Using Yay as AUR helper):
-    - `yay -S gnome-shell-extension-pop-shell`
-    - For precompiled binary version: `yay -S gnome-shell-extension-pop-shell-bin`
-    - For GitHub repository version: `yay -S gnome-shell-extension-pop-shell-git`
 
 ---
 
